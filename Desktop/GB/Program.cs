@@ -1,7 +1,17 @@
-﻿Console.Write("введите число: "); 
+﻿Console.WriteLine("Введите число:");
 
-int number = int.Parse(Console.ReadLine()); int sqr = number * number;
+int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Квадрат числа {number} равен = {sqr}");
-    
-    
+if (n % 2 == 1)
+{
+
+Console.WriteLine("Число " + n + " является: НЕЧЁТНЫМ");
+}
+
+else
+
+{
+
+Console.WriteLine("Число " + n + "является: ЧЁТНЫМ");
+
+}
