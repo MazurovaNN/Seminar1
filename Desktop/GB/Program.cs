@@ -1,7 +1,18 @@
-﻿Console.Write("введите число: "); 
+﻿Console.WriteLine("Введите 3 числа:");
 
-int number = int.Parse(Console.ReadLine()); int sqr = number * number;
+int num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Квадрат числа {number} равен = {sqr}");
-    
-    
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int max = num1;
+if (num2 > max)
+{
+max = num2;
+}
+if (num3 > max)
+{
+max = num3;
+}
+Console.WriteLine("Наибольшее из введённых чисел -> " + max);
