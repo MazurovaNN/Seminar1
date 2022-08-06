@@ -1,7 +1,41 @@
-﻿Console.Write("введите число: "); 
+﻿int i = 1;
 
-int number = int.Parse(Console.ReadLine()); int sqr = number * number;
+bool not = true;
 
-Console.WriteLine($"Квадрат числа {number} равен = {sqr}");
-    
-    
+
+
+Console.WriteLine("Введите число:");
+
+int num = Convert.ToInt32(Console.ReadLine());
+
+
+
+Console.WriteLine("Чётные числа от 1 до " + num);
+
+while (i <= num)
+
+{
+
+if (i % 2 != 1)
+{
+
+Console.Write(i + ", ");
+
+not = false;
+
+}
+
+i++;
+
+}
+
+
+
+if (not)
+
+{
+
+Console.WriteLine("Нет чётных чисел!");
+
+}
+
